@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CategoryContext } from '../../App';
 
 const Shipment = () => {
+    const [category, setCategory] = useContext(CategoryContext)
     return (
         <div>
-            <h1>This Is Shipment</h1>
+            <h1>This Is Shipment: {category}</h1>
+            <button onClick={() => setCategory(category + 1)}>Increase from Shipment</button>
         </div>
     );
 };
