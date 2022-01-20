@@ -7,7 +7,9 @@ function Header() {
     return (
         <div>
             <h1>THIS iS Header: {category}</h1>
-            <button onClick={() => setCategory(category + 1)}>Increment</button>
+            <button onClick={() => setCategory('Laptop')}>Laptop</button>,
+            <button onClick={() => setCategory('Mobile')}>Mobile</button>,
+            <button onClick={() => setCategory('Camera')}>Camera</button>
         </div>
     );
 };

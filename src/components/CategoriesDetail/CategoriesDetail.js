@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
-import { CategoryContext } from '../../App';
+import React from 'react';
 
-const CategoriesDetail = () => {
-    const category = useContext(CategoryContext)
+
+const CategoriesDetail = (props) => {
+    const { name } = props.product
     return (
         <div>
-            <h2>This is a category Detail: {category}</h2>
+            <h2>This is a category Detail</h2>
+            <h4>Selected Product: {name}</h4>
         </div>
     );
 };
